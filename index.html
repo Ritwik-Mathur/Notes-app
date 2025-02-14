@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App with Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📝 Notes App</h1>
+
+        <!-- Light/Dark Mode Toggle -->
+        <button id="modeToggle" class="mode-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+        <!-- Search Bar -->
+        <input type="text" id="searchInput" placeholder="Search notes..." onkeyup="searchNotes()">
+
+        <!-- Note Heading Input -->
+        <input type="text" id="noteHeading" placeholder="Enter note heading..." required>
+
+        <!-- Emoji Keyboard Button -->
+        <button class="emoji-toggle" onclick="toggleEmojiKeyboard()">😀 Emojis</button>
+
+        <!-- Emoji Keyboard -->
+        <div id="emojiKeyboard" class="emoji-keyboard"></div>
+
+        <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+        <button class="add-btn" onclick="addNote()">Add Note</button>
+
+        <!-- Clear All Notes Button -->
+        <button class="clear-btn" onclick="clearAllNotes()">🗑️ Clear All Notes</button>
+
+        <!-- Notes Container -->
+        <div id="notesContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
